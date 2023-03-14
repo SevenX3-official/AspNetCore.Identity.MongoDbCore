@@ -6,7 +6,7 @@ namespace AspNetCore.Identity.MongoDbCore.Extensions
     /// <summary>
     /// Extensions for the random number generator <see cref="Random"/>
     /// </summary>
-    public static class RandomExtensions
+    internal static class RandomExtensions
     {
 
         /// <summary>

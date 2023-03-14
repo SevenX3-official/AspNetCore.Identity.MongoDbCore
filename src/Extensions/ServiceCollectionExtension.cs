@@ -3,7 +3,6 @@ using AspNetCore.Identity.MongoDbCore.Infrastructure;
 using AspNetCore.Identity.MongoDbCore.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Identity.Core;
 using MongoDbGenericRepository;
 
 namespace AspNetCore.Identity.MongoDbCore.Extensions

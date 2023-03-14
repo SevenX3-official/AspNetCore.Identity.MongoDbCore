@@ -1,6 +1,5 @@
 using AspNetCore.Identity.MongoDbCore.Interfaces;
 using Microsoft.AspNetCore.Identity;
-using MongoDB.Driver;
 using MongoDbGenericRepository.Models;
 using MongoDbGenericRepository.Utils;
 using System;
