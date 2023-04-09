@@ -3,8 +3,10 @@
 
 using System.Threading;
 using System.Threading.Tasks;
+using AspNetCore.Identity.MongoDbCore.IntegrationTests.Shared;
+using Microsoft.AspNetCore.Identity;
 
-namespace Microsoft.AspNetCore.Identity.Test
+namespace AspNetCore.Identity.MongoDbCore.IntegrationTests.AspNetCore.Identity.Test
 {
     public class NoopRoleStore : IRoleStore<TestRole>
     {

@@ -2,9 +2,10 @@
 // Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
 using System.Reflection;
-using Microsoft.AspNetCore.Builder;
+using AspNetCore.Identity.MongoDbCore.IntegrationTests.Shared;
+using Microsoft.AspNetCore.Identity;
 
-namespace Microsoft.AspNetCore.Identity.Test
+namespace AspNetCore.Identity.MongoDbCore.IntegrationTests.AspNetCore.Identity.Test
 {
     public class ApiConsistencyTest : ApiConsistencyTestBase
     {

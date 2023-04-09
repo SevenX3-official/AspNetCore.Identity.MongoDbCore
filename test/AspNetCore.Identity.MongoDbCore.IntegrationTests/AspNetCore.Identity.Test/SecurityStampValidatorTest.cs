@@ -2,21 +2,21 @@
 // Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
 using System;
-using System.Text;
 using System.Security.Claims;
+using System.Text;
 using System.Threading.Tasks;
+using AspNetCore.Identity.MongoDbCore.IntegrationTests.Shared;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Moq;
 using Xunit;
-using AspNetCore.Identity.MongoDbCore.IntegrationTests;
 
-namespace Microsoft.AspNetCore.Identity.Test
+namespace AspNetCore.Identity.MongoDbCore.IntegrationTests.AspNetCore.Identity.Test
 {
     public class SecurityStampTest
     {

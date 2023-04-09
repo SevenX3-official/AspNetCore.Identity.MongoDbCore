@@ -7,18 +7,16 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using AspNetCore.Identity.MongoDbCore.Infrastructure;
+using AspNetCore.Identity.MongoDbCore.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Xunit;
-using AspNetCore.Identity.MongoDbCore.Extensions;
-using AspNetCore.Identity.MongoDbCore.IntegrationTests.Infrastructure;
-using AspNetCore.Identity.MongoDbCore.Models;
-using AspNetCore.Identity.MongoDbCore.Infrastructure;
 using MongoDbGenericRepository;
-using AspNetCore.Identity.MongoDbCore;
+using Xunit;
 
-namespace Microsoft.AspNetCore.Identity.Test
+namespace AspNetCore.Identity.MongoDbCore.IntegrationTests.Specification
 {
     /// <summary>
     /// Base class for tests that exercise basic identity functionality that all stores should support.

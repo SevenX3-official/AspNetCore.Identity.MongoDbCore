@@ -8,15 +8,15 @@ using System.Linq.Expressions;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using AspNetCore.Identity.MongoDbCore.Extensions;
-using AspNetCore.Identity.MongoDbCore.Infrastructure;
 using AspNetCore.Identity.MongoDbCore.IntegrationTests.Infrastructure;
 using AspNetCore.Identity.MongoDbCore.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Xunit;
 
-namespace Microsoft.AspNetCore.Identity.Test
+namespace AspNetCore.Identity.MongoDbCore.IntegrationTests.Specification
 {
     /// <summary>
     /// Common functionality tests that all verifies user manager functionality regardless of store implementation

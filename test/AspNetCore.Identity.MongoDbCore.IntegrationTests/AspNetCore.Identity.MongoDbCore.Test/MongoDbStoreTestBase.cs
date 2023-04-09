@@ -7,18 +7,19 @@ using System.Linq.Expressions;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using AspNetCore.Identity.MongoDbCore.Extensions;
+using AspNetCore.Identity.MongoDbCore.IntegrationTests.AspNetCore.Identity.MongoDbCore.Test.Utilities;
 using AspNetCore.Identity.MongoDbCore.IntegrationTests.Infrastructure;
+using AspNetCore.Identity.MongoDbCore.IntegrationTests.Specification;
 using AspNetCore.Identity.MongoDbCore.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.Test;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using MongoDB.Driver;
 using MongoDbGenericRepository;
 using Xunit;
 
-namespace AspNetCore.Identity.MongoDbCore.Test
+namespace AspNetCore.Identity.MongoDbCore.IntegrationTests.AspNetCore.Identity.MongoDbCore.Test
 {
     // TODO: Add test variation with non IdentityDbContext
 

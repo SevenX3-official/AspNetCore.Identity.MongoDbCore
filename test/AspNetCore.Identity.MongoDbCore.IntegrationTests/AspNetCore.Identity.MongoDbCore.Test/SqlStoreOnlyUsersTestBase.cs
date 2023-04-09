@@ -6,17 +6,17 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity.Test;
+using AspNetCore.Identity.MongoDbCore.IntegrationTests.AspNetCore.Identity.MongoDbCore.Test.Utilities;
+using AspNetCore.Identity.MongoDbCore.IntegrationTests.Infrastructure;
+using AspNetCore.Identity.MongoDbCore.IntegrationTests.Specification;
+using AspNetCore.Identity.MongoDbCore.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
-using Xunit;
-using AspNetCore.Identity.MongoDbCore.IntegrationTests.Infrastructure;
-using MongoDbGenericRepository;
-using AspNetCore.Identity.MongoDbCore.Models;
-using AspNetCore.Identity.MongoDbCore;
 using MongoDB.Driver;
+using MongoDbGenericRepository;
+using Xunit;
 
-namespace AspNetCore.Identity.MongoDbCore.Test
+namespace AspNetCore.Identity.MongoDbCore.IntegrationTests.AspNetCore.Identity.MongoDbCore.Test
 {
     public abstract class SqlStoreOnlyUsersTestBase<TUser, TKey> : UserManagerSpecificationTestBase<TUser, TKey>, IClassFixture<MongoDatabaseFixture<TUser, TKey>>
         where TUser : MongoIdentityUser<TKey>, new()

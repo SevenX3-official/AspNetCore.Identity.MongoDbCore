@@ -2,9 +2,10 @@
 // Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
 using System;
+using AspNetCore.Identity.MongoDbCore.IntegrationTests.AspNetCore.Identity.MongoDbCore.Test.Utilities;
 using AspNetCore.Identity.MongoDbCore.Models;
 
-namespace AspNetCore.Identity.MongoDbCore.Test
+namespace AspNetCore.Identity.MongoDbCore.IntegrationTests.AspNetCore.Identity.MongoDbCore.Test
 {
     public class LongUser : MongoIdentityUser<long>
     {

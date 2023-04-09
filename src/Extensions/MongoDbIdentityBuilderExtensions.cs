@@ -3,14 +3,14 @@
 
 using System;
 using System.Reflection;
+using AspNetCore.Identity.MongoDbCore.Infrastructure;
+using AspNetCore.Identity.MongoDbCore.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using MongoDbGenericRepository;
-using AspNetCore.Identity.MongoDbCore;
-using AspNetCore.Identity.MongoDbCore.Models;
-using AspNetCore.Identity.MongoDbCore.Infrastructure;
 
-namespace Microsoft.Extensions.DependencyInjection
+namespace AspNetCore.Identity.MongoDbCore.Extensions
 {
     /// <summary>
     /// Contains extension methods to <see cref="IdentityBuilder"/> for adding MongoDb stores.
@@ -49,7 +49,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <param name="connectionString"></param>
         /// <param name="databaseName"></param>
         public static IdentityBuilder AddMongoDbStores<TUser, TRole, TKey>(this IdentityBuilder builder, string connectionString, string databaseName)
-                    where TUser : MongoIdentityUser<TKey>, new()
+                    where TUser : MongoIdentityUser<TKey>
                     where TRole : MongoIdentityRole<TKey>, new()
                     where TKey : IEquatable<TKey>
         {
@@ -80,7 +80,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <param name="builder">The <see cref="IdentityBuilder"/> instance this method extends.</param>
         /// <param name="mongoDbContext"></param>
         public static IdentityBuilder AddMongoDbStores<TUser, TRole, TKey>(this IdentityBuilder builder, IMongoDbContext mongoDbContext)
-                    where TUser : MongoIdentityUser<TKey>, new()
+                    where TUser : MongoIdentityUser<TKey>
                     where TRole : MongoIdentityRole<TKey>, new()
                     where TKey : IEquatable<TKey>
         {

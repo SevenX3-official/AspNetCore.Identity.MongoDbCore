@@ -21,7 +21,7 @@ namespace AspNetCore.Identity.MongoDbCore
     /// </summary>
     /// <typeparam name="TUser">The type representing a user.</typeparam>
     public class MongoUserOnlyStore<TUser> : MongoUserOnlyStore<TUser, IMongoDbContext, string>
-        where TUser : MongoIdentityUser<string>, new()
+        where TUser : MongoIdentityUser<string>
     {
         /// <summary>
         /// Constructs a new instance of <see cref="MongoUserOnlyStore{TUser}"/>.

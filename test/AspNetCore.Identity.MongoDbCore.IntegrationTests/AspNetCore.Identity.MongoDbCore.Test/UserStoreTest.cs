@@ -4,15 +4,16 @@
 using System;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using AspNetCore.Identity.MongoDbCore.IntegrationTests.AspNetCore.Identity.MongoDbCore.Test.Utilities;
 using AspNetCore.Identity.MongoDbCore.IntegrationTests.Infrastructure;
+using AspNetCore.Identity.MongoDbCore.IntegrationTests.Specification;
 using AspNetCore.Identity.MongoDbCore.Models;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.Test;
 using Microsoft.Extensions.DependencyInjection;
 using MongoDbGenericRepository;
 using Xunit;
 
-namespace AspNetCore.Identity.MongoDbCore.Test
+namespace AspNetCore.Identity.MongoDbCore.IntegrationTests.AspNetCore.Identity.MongoDbCore.Test
 {
     public class UserStoreTest : IdentitySpecificationTestBase<MongoDbIdentityUser, MongoDbIdentityRole>, IClassFixture<MongoDatabaseFixture<MongoDbIdentityUser, MongoDbIdentityRole, string>>
     {

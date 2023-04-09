@@ -1,14 +1,14 @@
 // Copyright (c) .NET Foundation. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
-namespace Microsoft.AspNetCore.Identity.Test
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using Xunit.Abstractions;
-    using Xunit.Sdk;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Xunit.Abstractions;
+using Xunit.Sdk;
 
+namespace AspNetCore.Identity.MongoDbCore.IntegrationTests.Shared
+{
     /// <summary>
     /// Test priority
     /// </summary>

@@ -3,11 +3,13 @@
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
+using AspNetCore.Identity.MongoDbCore.IntegrationTests.Shared;
+using AspNetCore.Identity.MongoDbCore.IntegrationTests.Specification;
+using Microsoft.AspNetCore.Identity;
 using Xunit;
 
-namespace Microsoft.AspNetCore.Identity.Test
+namespace AspNetCore.Identity.MongoDbCore.IntegrationTests.AspNetCore.Identity.Test
 {
     public class PasswordValidatorTest
     {

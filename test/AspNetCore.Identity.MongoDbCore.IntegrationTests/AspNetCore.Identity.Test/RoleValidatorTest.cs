@@ -3,9 +3,12 @@
 
 using System;
 using System.Threading.Tasks;
+using AspNetCore.Identity.MongoDbCore.IntegrationTests.Shared;
+using AspNetCore.Identity.MongoDbCore.IntegrationTests.Specification;
+using Microsoft.AspNetCore.Identity;
 using Xunit;
 
-namespace Microsoft.AspNetCore.Identity.Test
+namespace AspNetCore.Identity.MongoDbCore.IntegrationTests.AspNetCore.Identity.Test
 {
     public class RoleValidatorTest
     {

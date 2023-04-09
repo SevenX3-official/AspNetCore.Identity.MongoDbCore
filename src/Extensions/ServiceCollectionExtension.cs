@@ -111,7 +111,7 @@ namespace AspNetCore.Identity.MongoDbCore.Extensions
 
 
         private static IdentityBuilder CommonMongoDbSetup<TUser, TRole, TKey>(this IServiceCollection services, MongoDbIdentityConfiguration mongoDbIdentityConfiguration)
-                    where TUser : MongoIdentityUser<TKey>, new()
+                    where TUser : MongoIdentityUser<TKey>
                     where TRole : MongoIdentityRole<TKey>, new()
                     where TKey : IEquatable<TKey>
         {

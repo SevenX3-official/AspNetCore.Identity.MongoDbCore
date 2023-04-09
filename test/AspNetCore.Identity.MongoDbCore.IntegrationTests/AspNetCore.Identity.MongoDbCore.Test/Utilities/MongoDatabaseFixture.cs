@@ -2,14 +2,14 @@
 // Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
 using System;
-using MongoDbGenericRepository;
-using AspNetCore.Identity.MongoDbCore.IntegrationTests.Infrastructure;
 using System.Collections.Concurrent;
 using System.Linq;
+using AspNetCore.Identity.MongoDbCore.IntegrationTests.Infrastructure;
 using MongoDB.Driver;
+using MongoDbGenericRepository;
 using MongoDbGenericRepository.Models;
 
-namespace AspNetCore.Identity.MongoDbCore.Test
+namespace AspNetCore.Identity.MongoDbCore.IntegrationTests.AspNetCore.Identity.MongoDbCore.Test.Utilities
 {
     public class MongoDatabaseFixture<TUser, TKey> : IDisposable
         where TUser : IDocument<TKey>

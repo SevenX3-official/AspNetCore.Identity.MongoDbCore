@@ -3,7 +3,7 @@
 
 using System;
 
-namespace Microsoft.AspNetCore.Identity.Test
+namespace AspNetCore.Identity.MongoDbCore.IntegrationTests.Shared
 {
     /// <summary>
     ///     Entity type for a user's login (i.e. facebook, google)

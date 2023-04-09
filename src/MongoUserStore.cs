@@ -36,7 +36,7 @@ namespace AspNetCore.Identity.MongoDbCore
     /// </summary>
     /// <typeparam name="TUser">The type representing a user.</typeparam>
     public class MongoUserStore<TUser> : MongoUserStore<TUser, MongoIdentityRole<string>, IMongoDbContext, string>
-        where TUser : MongoIdentityUser<string>, new()
+        where TUser : MongoIdentityUser<string>
     {
         /// <summary>
         /// Constructs a new instance of <see cref="MongoUserStore{TUser}"/>.
@@ -53,7 +53,7 @@ namespace AspNetCore.Identity.MongoDbCore
     /// <typeparam name="TRole">The type representing a role.</typeparam>
     /// <typeparam name="TContext">The type of the data context class used to access the store.</typeparam>
     public class MongoUserStore<TUser, TRole, TContext> : MongoUserStore<TUser, TRole, TContext, string>
-        where TUser : MongoIdentityUser<string>, new()
+        where TUser : MongoIdentityUser<string>
         where TRole : MongoIdentityRole<string>, new()
         where TContext : IMongoDbContext
     {
@@ -73,7 +73,7 @@ namespace AspNetCore.Identity.MongoDbCore
     /// <typeparam name="TContext">The type of the data context class used to access the store.</typeparam>
     /// <typeparam name="TKey">The type of the primary key for a role.</typeparam>
     public class MongoUserStore<TUser, TRole, TContext, TKey> : MongoUserStore<TUser, TRole, TContext, TKey, IdentityUserClaim<TKey>, IdentityUserRole<TKey>, IdentityUserLogin<TKey>, IdentityUserToken<TKey>, IdentityRoleClaim<TKey>>
-        where TUser : MongoIdentityUser<TKey>, new()
+        where TUser : MongoIdentityUser<TKey>
         where TRole : MongoIdentityRole<TKey>, new()
         where TContext : IMongoDbContext
         where TKey : IEquatable<TKey>
@@ -101,7 +101,7 @@ namespace AspNetCore.Identity.MongoDbCore
     public class MongoUserStore<TUser, TRole, TContext, TKey, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim> :
         UserStoreBase<TUser, TRole, TKey, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim>,
         IUserAuthenticationTokenStore<TUser>
-        where TUser : MongoIdentityUser<TKey>, new()
+        where TUser : MongoIdentityUser<TKey>
         where TRole : MongoIdentityRole<TKey>, new()
         where TContext : IMongoDbContext
         where TKey : IEquatable<TKey>
